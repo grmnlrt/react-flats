@@ -6,7 +6,7 @@ class Flatslist extends Component {
     return (
       <div className="flat-list">
         {this.props.flats.map( flat => {
-          return <Flat flat={flat} key={flat.name}/>
+          return <Flat flat={flat} key={flat.name} updateMarker={this.props.updateMarker}/>
         })}
       </div>
     )
